@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <form class="form" action="backend.php" method="post">
+        <h1 id="h1">Loan Application</h1>
+        <h2 id="h2">Applicant Information</h2>
+        <div class="ApplicantInfo">
+            <label for="#Name">First Name</label>
+            <input type="text" name="txtName" id="#Name" placeholder="Enter your First Name" required>
+        
+            <label for="#lname">Last Name</label>
+            <input type="text" name="txt1Name" id="#lname" placeholder="Enter your Last Name">
+        
+            <label for="email">Email</label>
+            <input type="email" name="#email" id="email" placeholder="user@example.com">
+        
+            <label for="#sec">Social Security #</label>
+            <input type="number" name="txtNum" id="#sec" required placeholder="******">
+        
+            <label for="#id">Daytime Phone</label>
+            <input type="number" name="txtName" id="#id" placeholder="0519265100">
+        
+            <label for="#evphn">Evening Phone</label>
+            <input type="number" name="txtName" id="#evphn" placeholder="0519265101">
+        </div>
+
+        <div class="Loan">
+            <h2>Loan Information</h2>
+        </div>
+
+        <div class="LoanInfo">
+            <label for="Ltype" style="display: block;">Loan type</label>
+            <select name="type" id="Ltype" required style="width: 85%;">
+                <option value="" disabled selected>Select</option>
+                <option value="Improve">Home items</option>
+                <option value="Improvement">Renovation</option>
+            </select>
+
+            <label for="#lamount" style="display: block;">Loan Amount</label>
+            <input type="number" name="amount" id="#lamount" placeholder="1,000" minlength="10" max="100,000">
+            
+            <label for="#descp">Description</label>
+            <textarea name="text" id="#descp" cols="20" rows="10"></textarea>
+        </div>
+
+        <div class="form-buttons">
+            <input type="submit" value="Submit" class="submit-button">
+            <input type="reset" value="Reset" class="reset-button">
+        </div>
+    </form>
+</body>
+</html>
